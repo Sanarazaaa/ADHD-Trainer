@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD Learning Tool</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ADHD Learning Tool</h1>
+            <div class="settings">
+                <button id="darkModeToggle">🌙</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="games-grid">
+                <div class="game-card" id="memoryGame">
+                    <h2>Memory Game</h2>
+                    <p>Test and improve your memory</p>
+                    <button onclick="startMemoryGame()">Start</button>
+                </div>
+
+                <div class="game-card" id="reactionTest">
+                    <h2>Reaction Test</h2>
+                    <p>Measure your response time</p>
+                    <button onclick="startReactionTest()">Start</button>
+                </div>
+
+                <div class="game-card" id="focusTimer">
+                    <h2>Focus Timer</h2>
+                    <p>Stay focused for set duration</p>
+                    <button onclick="startFocusTimer()">Start</button>
+                </div>
+            </div>
+
+            <div id="gameArea" class="game-area" style="display: none;">
+                <!-- Game content will be dynamically inserted here -->
+            </div>
+        </main>
+
+        <div id="progressBar" class="progress-container">
+            <div class="progress-bar">
+                <div class="progress" style="width: 0%"></div>
+            </div>
+            <p>Daily Progress: <span id="progressText">0%</span></p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/memory-game.js"></script>
+    <script src="js/reaction-test.js"></script>
+    <script src="js/focus-timer.js"></script>
+</body>
+</html>

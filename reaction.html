@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Test - ADHD Learning Tool</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Reaction Test</h1>
+            <a href="../index.html" class="back-button">← Back to Menu</a>
+        </header>
+        
+        <div id="gameArea" class="game-area">
+            <!-- Game content will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <script src="../js/reaction-test.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const game = new ReactionTest();
+            game.init();
+        });
+    </script>
+</body>
+</html>
